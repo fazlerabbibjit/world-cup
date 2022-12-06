@@ -13,9 +13,8 @@
             android:id="@+id/teamLogo"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:scaleType="centerCrop"
             android:importantForAccessibility="no"
-            android:src="@color/design_default_color_primary_variant"/>
+            android:src="@drawable/argentina_logo"/>
 
         <TextView
             android:id="@+id/teamName"
