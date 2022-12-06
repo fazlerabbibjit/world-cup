@@ -15,9 +15,9 @@ class TeamAdapter(
     private val dataset: List<WorldCup>
 ) : RecyclerView.Adapter<TeamAdapter.TeamViewHolder>() {
     class TeamViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        val teamLogo = view.findViewById<ImageView>(R.id.teamLogo)
-        val teamName = view.findViewById<TextView>(R.id.teamName)
-        val teamLeg = view.findViewById<TextView>(R.id.teamLeg)
+        val logo: ImageView = view.findViewById(R.id.logo)
+        val name: TextView = view.findViewById(R.id.name)
+        val confederation: TextView = view.findViewById(R.id.confederation)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TeamViewHolder {
@@ -29,9 +29,9 @@ class TeamAdapter(
 
     override fun onBindViewHolder(holder: TeamViewHolder, position: Int) {
         val item = dataset[position]
-        holder.teamLogo.setImageResource(item.teamLogo)
-        holder.teamName.text = context.resources.getString(item.teamName)
-        holder.teamLeg.text = context.resources.getString(item.teamLeg)
+        holder.logo.setImageResource(item.logo)
+        holder.name.text = context.resources.getString(item.name)
+        holder.confederation.text = context.resources.getString(item.confederation)
     }
 
     override fun getItemCount() = dataset.size
