@@ -20,7 +20,7 @@ class DetailsInfo : AppCompatActivity() {
         val teamConfederation: TextView = findViewById(R.id.teamConfederation)
 
         getTeamLogo?.toInt()?.let { teamLogo.setImageResource(it) }
-        teamName.text = getTeamName?.toInt()?.let { getString(it) }
-        teamConfederation.text = getTeamConfederation?.toInt()?.let { getString(it) }
+        teamName.text = "Team: " + getTeamName?.toInt()?.let { getString(it) }
+        teamConfederation.text = "Confederation: " + getTeamConfederation?.toInt()?.let { getString(it) }
     }
 }
