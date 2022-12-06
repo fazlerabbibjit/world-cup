@@ -32,13 +32,8 @@
             android:layout_height="wrap_content"
             android:text="@string/uefa"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-<<<<<<< HEAD
             android:textAlignment="center"
             android:paddingBottom="8dp" />
-=======
-            android:textAlignment="center"/>
-
->>>>>>> 963fa76ce5c928190eb99d8a9ce6cf2db980bc7c
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
