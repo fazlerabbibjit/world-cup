@@ -10,14 +10,14 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/teamLogo"
+            android:id="@+id/logo"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:importantForAccessibility="no"
             android:src="@drawable/argentina_logo"/>
 
         <TextView
-            android:id="@+id/teamName"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/team1"
@@ -26,7 +26,7 @@
             />
 
         <TextView
-            android:id="@+id/teamLeg"
+            android:id="@+id/confederation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/uefa"
