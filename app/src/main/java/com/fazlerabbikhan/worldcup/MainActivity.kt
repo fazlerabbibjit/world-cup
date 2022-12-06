@@ -2,6 +2,7 @@ package com.fazlerabbikhan.worldcup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -16,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         val myDataset = Datasource().loadWorldCup()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = TeamAdapter(this, myDataset)
-        recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
+//        recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
+        recyclerView.layoutManager = GridLayoutManager(this, 2)
         recyclerView.setHasFixedSize(true)
     }
 }

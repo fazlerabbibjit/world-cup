@@ -2,6 +2,7 @@ package com.fazlerabbikhan.worldcup.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,11 +36,12 @@ class TeamAdapter(
         holder.name.text = context.resources.getString(item.name)
         holder.confederation.text = context.resources.getString(item.confederation)
 
+        Log.d("debugged", item.name.toString())
         holder.itemView.setOnClickListener{
             val intent = Intent(context, DetailsInfo::class.java)
-            intent.putExtra("logo", item.logo.toString())
-            intent.putExtra("name", item.name.toString())
-            intent.putExtra("confederation", item.confederation.toString())
+            intent.putExtra("teamLogo", item.logo.toString())
+            intent.putExtra("teamName", item.name.toString())
+            intent.putExtra("teamConfederation", item.confederation.toString())
             context.startActivity(intent)
         }
     }
