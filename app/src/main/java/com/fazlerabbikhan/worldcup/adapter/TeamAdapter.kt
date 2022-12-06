@@ -37,9 +37,9 @@ class TeamAdapter(
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context, DetailsInfo::class.java)
-            intent.putExtra("teamLogo", item.logo.toString())
-            intent.putExtra("teamName", item.name.toString())
-            intent.putExtra("teamConfederation", item.confederation.toString())
+            intent.putExtra("logo", item.logo.toString())
+            intent.putExtra("name", item.name.toString())
+            intent.putExtra("confederation", item.confederation.toString())
             context.startActivity(intent)
         }
     }
