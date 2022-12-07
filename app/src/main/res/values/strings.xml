@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">World Cup</string>
+    <string name="click_here">Click here for details.</string>
+    <string name="uefa">UEFA</string>
+    <string name="conmebol">CONMEBOL</string>
+
+    <string name="team">Team</string>
+    <string name="confederation">Confederation</string>
 </resources>
